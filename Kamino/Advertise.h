@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) NSString *apiAccessKey;
 @property (nonatomic,strong) NSString *baseUrl;
+-(id)initWithBaseUrl:(NSString*)baseUrl andApiAccessKey:(NSString*)apiAccessKey;
 
 -(void)getAdWithType:(NSInteger)type deviceId:(NSString*)deviceId completitionHandler:(nonnull void (^)(BOOL success, NSDictionary * _Nullable dictionary))completitionHandler;
 -(void)registerAdClickWithAdId:(NSString*)adId deviceId:(NSString*)deviceId completitionHandler:(nonnull void (^)(BOOL success, NSDictionary * _Nullable dictionary))completitionHandler;
