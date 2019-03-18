@@ -14,6 +14,8 @@ FOUNDATION_EXPORT double KaminoVersionNumber;
 //! Project version string for Kamino.
 FOUNDATION_EXPORT const unsigned char KaminoVersionString[];
 
+#import <Kamino/Advertise.h>
+
 // In this header, you should import all the public headers of your framework using statements like #import <Kamino/PublicHeader.h>
 
 

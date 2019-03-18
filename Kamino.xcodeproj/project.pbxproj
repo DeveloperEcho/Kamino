@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F4DEFEC9223FD201001EFF2F /* Kamino.h in Headers */ = {isa = PBXBuildFile; fileRef = F4DEFEC7223FD201001EFF2F /* Kamino.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F4DEFED2223FD480001EFF2F /* Advertise.h in Headers */ = {isa = PBXBuildFile; fileRef = F4DEFED0223FD480001EFF2F /* Advertise.h */; };
+		F4DEFED2223FD480001EFF2F /* Advertise.h in Headers */ = {isa = PBXBuildFile; fileRef = F4DEFED0223FD480001EFF2F /* Advertise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4DEFED3223FD480001EFF2F /* Advertise.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DEFED1223FD480001EFF2F /* Advertise.m */; };
 /* End PBXBuildFile section */
 
