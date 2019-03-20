@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Kamino"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Kamino is a framework for tracking ads and presenting them in apps."
 
   # This description is used to generate tags and improve search results.

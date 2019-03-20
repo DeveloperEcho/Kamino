@@ -54,12 +54,7 @@
             completitionHandler(NO,responseDict);
         } else {
             NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-            NSString* message = [responseDict valueForKey:@"Message"];
-            if (message == (id)[NSNull null] || message.length == 0 ) {
-                completitionHandler(YES,responseDict);
-            } else {
-                completitionHandler(NO,responseDict);
-            }
+            completitionHandler(YES,responseDict);
         }
     }];
     [postDataTask resume];
@@ -99,12 +94,7 @@
             completitionHandler(NO,responseDict);
         } else {
             NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-            NSString* message = [responseDict valueForKey:@"Message"];
-            if (message == (id)[NSNull null] || message.length == 0 ) {
-                completitionHandler(YES,responseDict);
-            } else {
-                completitionHandler(NO,responseDict);
-            }
+            completitionHandler(YES,responseDict);
         }
     }];
     [postDataTask resume];
@@ -144,12 +134,7 @@
             completitionHandler(NO,responseDict);
         } else {
             NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-            NSString* message = [responseDict valueForKey:@"Message"];
-            if (message == (id)[NSNull null] || message.length == 0 ) {
-                completitionHandler(YES,responseDict);
-            } else {
-                completitionHandler(NO,responseDict);
-            }
+            completitionHandler(YES,responseDict);
         }
     }];
     [postDataTask resume];
