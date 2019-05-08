@@ -49,12 +49,16 @@
     //Session Task
     NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         NSInteger statusCode = [(NSHTTPURLResponse *)response statusCode];
-        if (statusCode != 200) {
-            NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-            completitionHandler(NO,responseDict);
+        if (data != nil) {
+            if (statusCode != 200) {
+                NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+                completitionHandler(NO,responseDict);
+            } else {
+                NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+                completitionHandler(YES,responseDict);
+            }
         } else {
-            NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-            completitionHandler(YES,responseDict);
+            completitionHandler(NO,nil);
         }
     }];
     [postDataTask resume];
@@ -89,12 +93,16 @@
     //Session Task
     NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         NSInteger statusCode = [(NSHTTPURLResponse *)response statusCode];
-        if (statusCode != 200) {
-            NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-            completitionHandler(NO,responseDict);
+        if (data != nil) {
+            if (statusCode != 200) {
+                NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+                completitionHandler(NO,responseDict);
+            } else {
+                NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+                completitionHandler(YES,responseDict);
+            }
         } else {
-            NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-            completitionHandler(YES,responseDict);
+            completitionHandler(NO,nil);
         }
     }];
     [postDataTask resume];
@@ -129,12 +137,16 @@
     //Session Task
     NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         NSInteger statusCode = [(NSHTTPURLResponse *)response statusCode];
-        if (statusCode != 200) {
-            NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-            completitionHandler(NO,responseDict);
+        if (data != nil) {
+            if (statusCode != 200) {
+                NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+                completitionHandler(NO,responseDict);
+            } else {
+                NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+                completitionHandler(YES,responseDict);
+            }
         } else {
-            NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-            completitionHandler(YES,responseDict);
+            completitionHandler(NO,nil);
         }
     }];
     [postDataTask resume];
